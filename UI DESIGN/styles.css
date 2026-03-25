@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 36px 48px 0 auto;
+    
+}
+.menu{
+    background-color: brown;
+    height: 100px;
+    width: 116px;
+    display: flex;
+    background-color: transparent;
+     flex-wrap: wrap;
+      gap: 12px;
+}
+
+.menu div{
+    height: 1.5px;
+    width: 1.5px;
+    padding: 14px;
+    background-color: rgb(213, 208, 208);
+    border-radius: 50%;
+}
+.user-icon{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 16px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+
+   
+}
+.menu:hover{
+    background-color: blanchedalmond;
+    cursor: pointer;
+   
+}
+
+.menu-box{
+ width: 100px;
+height: 200px;
+background-color: aqua;
+display: none;
+position: absolute;
+top: 150px;
+right: 175px;
+}
+
+.menu:hover ~.menu-box{
+    display: block;
+
+}
+.menu-box:hover{
+    display: block;
+
+}

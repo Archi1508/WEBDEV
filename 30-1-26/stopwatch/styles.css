@@ -1,0 +1,8 @@
+.child1{
+    background-color: bisque;
+}
+.parent{
+    margin: 16px;
+    height: 100px;
+    width: 90px;
+}

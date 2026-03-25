@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            display: grid;
+            grid-template-columns: repeat(3,200px);
+            grid-template-rows: repeat(3,200px);
+            width: fit-content;
+        }
+        main div{
+            background-color: blanchedalmond;
+            border: 1px solid chocolate;
+            font-size: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        body{
+            display: flex;
+        }
+        #win-area{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+   <main>
+        <div id="0,0"></div>
+        <div id="0,1"></div>
+        <div id="0,2"></div>
+        <div id="1,0"></div>
+        <div id="1,1"></div>
+        <div id="1,2"></div>
+        <div id="2,0"></div>
+        <div id="2,1"></div>
+        <div id="2,2"></div>
+    </main>
+    <div id="win-area">
+        <img src="https://in.images.search.yahoo.com/search/images;_ylt=AwrKGFhHN3xpy0oE5S7mHAx.?p=confetti+gif+transparent&type=E210IN885G0&fr=mcafee&fr2=p%3As%2Cv%3Av%2Cm%3Apivot#id=2&iurl=https%3A%2F%2Fi0.wp.com%2Facegif.com%2Fwp-content%2Fgif%2Fconfetti-40.gif&action=close" alt="tt">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
