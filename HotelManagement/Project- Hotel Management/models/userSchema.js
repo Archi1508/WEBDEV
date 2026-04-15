@@ -15,6 +15,7 @@ const userSchema = new Schema({
 },
     {
         timestamps: true
+        // created at, updated at
     }
 );
 
