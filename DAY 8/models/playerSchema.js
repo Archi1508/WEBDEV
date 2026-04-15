@@ -1,5 +1,5 @@
-const {} = require("mongoose");
-const playSchema = new Schema({
+const {Schema,model} = require("mongoose");
+const playerSchema = new Schema({
     name:
     {
         type: String,
@@ -13,19 +13,26 @@ const playSchema = new Schema({
         trim: true,
         unique: true,
     },
-    avatarUrl: String,
-    skills:
-    {
-        type: String,
-        enum:["Survival", "Combat", "Defense","Stealth"],
-    },
-    email:
+     email:
     {
         type:String,
         required:true,
         unique:true,
         trim:true,
     },
+    avatarUrl: String,
+    skills:
+    {
+        type: String,
+        enum:["Survival", "Combat", "Defense","Stealth"],
+    },
 });
 const Player = model("Player",playerSchema);
-module.exports=Player;
+module.exports={Player};
+
+
+// WAYS TO SEND DATA FROM FRONTEND TO BACKEND 
+// urL PARAMSE
+// SOMETHING AFTER ? ( QUERY PARAMSE )
+// BODY FORMAT,BINARY,RAW,FORM 
+// HEADERS

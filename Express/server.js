@@ -15,7 +15,7 @@ mongoose
   })
   .catch((err) => {
     console.log(
-      "________________erro in db connection_____________",
+      "________________error in db connection_____________",
       err.message,
     );
   });
@@ -63,31 +63,6 @@ app.get("/", (req, res) => {
 
 app.use(express.json());
 
-//  creating movies
-// app.post("/movies", async (req, res) => {
-//     try
-//     {
-//     const movieData = req.body;
-//     const result = await Movies.insertOne(movieData);
-//     console.log("result",result);
-//     res.json({
-//         suucess : true,
-//         message : "Movie Inserted",
-//         data: {
-//             movie : result,
-//         },
-//     });
-//     }
-//     catch(err)
-//     {
-//         console.log("Error in POST movies:", err.message);
-//         res.status(500);
-//         res.json({
-//             success: false,
-//             message: "Internal Server Error",
-//         });
-//     }
-// });
 
 app.post("/movies", async (req, res) => {
     try {
